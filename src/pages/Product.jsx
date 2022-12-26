@@ -32,8 +32,8 @@ const Desc = styled.p`
 margin: 20px 0;
 `
 const Price = styled.span`
-font-weight: 100;
-font-size: 30px;
+font-weight: 200;
+font-size: 24px;
 `
 const FilterContainer = styled.div`
 display: flex;
@@ -79,15 +79,15 @@ const Amount = styled.span`
 width: 30px;
 height: 30px;
 border-radius: 10px;
-border: 1px solid teal;
+border: 1px solid;
 display: flex;
 align-items: center;
 justify-content: center;
 margin: 0 5px;
 `
 const Button = styled.button`
-  padding: 15px;
-  border: 2px solid teal;
+  padding: 12px;
+  border: 0.5px solid;
   background-color: white;
   cursor: pointer;
   font-weight: 500;
@@ -103,16 +103,15 @@ const Product = () => {
     <Announcemets/>
     <Wrapper>
         <ImgContainer>
-            <Image src = "https://images.pexels.com/photos/9225867/pexels-photo-9225867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+            <Image src = "https://media.istockphoto.com/id/183331232/photo/glasses.jpg?b=1&s=612x612&w=0&k=20&c=IM7o4BLaCYnTlv6O1W0V3Mtg_OA78X0xQwh7NynCn6M="/>
         </ImgContainer>
         <InfoContainer>
-            <Title> Denim Jumpsuit</Title>
+            <Title> Stylish Frames</Title>
             <Desc>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at
             iaculis arcu nisi sed mauris. Nulla fermentum vestibulum ex, eget
-            tristique tortor pretium ut. Curabitur elit justo, consequat id
-            condimentum ac, volutpat ornare.</Desc>
-            <Price>$ 20 </Price>
+            tristique tortor pretium ut.</Desc>
+            <Price>₦20,000 </Price>
             <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
@@ -123,7 +122,6 @@ const Product = () => {
             <Filter>
               <FilterTitle>Size</FilterTitle>
               <FilterSize>
-                <FilterSizeOption>XS</FilterSizeOption>
                 <FilterSizeOption>S</FilterSizeOption>
                 <FilterSizeOption>M</FilterSizeOption>
                 <FilterSizeOption>L</FilterSizeOption>

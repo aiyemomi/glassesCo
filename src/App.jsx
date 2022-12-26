@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles.css";
 import Home from './pages/Home';
 import ProductList from './pages/ProductList';

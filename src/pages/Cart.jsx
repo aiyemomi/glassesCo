@@ -11,8 +11,10 @@ const Container = styled.div`
 `
 const Wrapper = styled.div`
 padding: 20px;
+margin-bottom: 50px;
 `
 const Title = styled.h1`
+font-size: 24px;
 font-weight: 300;
 text-align: center;
 `
@@ -25,6 +27,7 @@ padding: 20px;
 const TopButton = styled.button`
 padding: 10px;
 font-weight: 600;
+font-size: 16px;
 cursor: pointer;
 border: ${props=>props.type === "filled" && "none"};
 background-color: ${props=>props.type === "filled" ? "black" :"transparent"};
@@ -94,13 +97,13 @@ const ProductAmountContainer = styled.div`
 `;
 
 const ProductAmount = styled.div`
-font-size: 24px;
+font-size: 18px;
 margin: 5px;
 `
 
 const ProductPrice = styled.div`
-font-size: 30px;
-font-weight: 200;
+font-size: 18px;
+font-weight: 300;
 `
 const Hr = styled.hr`
   background-color: #eee;
@@ -118,6 +121,7 @@ height: 50vh;
 
 const SummaryTitle = styled.h1`
 font-weight: 200;
+font-size: 28px;
 `
 const SummaryItem = styled.div  `
 margin: 30px 0;
@@ -126,16 +130,18 @@ justify-content: space-between;
 font-weight: ${(props) => props.type === "total" && "500"};
 font-size: ${(props) => props.type === "total" && "24px"};
 `
-const SummaryItemText = styled.span``;
+const SummaryItemText = styled.span`
+font-size: 18px;`
 
 const SummaryItemPrice = styled.span``;
 
 const Button = styled.button`
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   background-color: black;
   color: white;
   font-weight: 600;
+  margin-top: 30px;
 `;
 
 const Cart = () => {
@@ -158,7 +164,7 @@ const Cart = () => {
 <Info>
 <Product>
               <ProductDetail>
-                <Image src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1614188818-TD1MTHU_SHOE_ANGLE_GLOBAL_MENS_TREE_DASHERS_THUNDER_b01b1013-cd8d-48e7-bed9-52db26515dc4.png?crop=1xw:1.00xh;center,top&resize=480%3A%2A" />
+                <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkl8F1S1T5CnwkTglug76JVgvnRvD8TpsrAw&usqp=CAU" />
                 <Details>
                   <ProductName>
                     <b>Product:</b> JESSIE THUNDER SHOES
@@ -174,17 +180,17 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <Add />
+                  <Add style ={{fontSize: "16px"}} />
                   <ProductAmount>2</ProductAmount>
-                  <Remove />
+                  <Remove style ={{fontSize: "16px"}}/>
                 </ProductAmountContainer>
-                <ProductPrice>$ 30</ProductPrice>
+                <ProductPrice>₦ 30,000</ProductPrice>
               </PriceDetail>
             </Product>
             <Hr />
             <Product>
               <ProductDetail>
-                <Image src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" />
+                <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLXK5ugumVlMWAZmP_ZTz6MI1iJW0Cgkw2RA&usqp=CAU" />
                 <Details>
                   <ProductName>
                     <b>Product:</b> HAKURA T-SHIRT
@@ -200,11 +206,11 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <Add />
+                  <Add style ={{fontSize: "16px"}} />
                   <ProductAmount>1</ProductAmount>
-                  <Remove />
+                  <Remove  style ={{fontSize: "16px"}}/>
                 </ProductAmountContainer>
-                <ProductPrice>$ 20</ProductPrice>
+                <ProductPrice>₦ 20,000</ProductPrice>
               </PriceDetail>
             </Product>
 
@@ -213,19 +219,19 @@ const Cart = () => {
 <SummaryTitle>ORDER SUMMARY</SummaryTitle>
             <SummaryItem>
               <SummaryItemText>Subtotal</SummaryItemText>
-              <SummaryItemPrice>$ 80</SummaryItemPrice>
+              <SummaryItemPrice>₦ 80,000</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Estimated Shipping</SummaryItemText>
-              <SummaryItemPrice>$ 5.90</SummaryItemPrice>
+              <SummaryItemPrice>₦ 5,900</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Shipping Discount</SummaryItemText>
-              <SummaryItemPrice>$ -5.90</SummaryItemPrice>
+              <SummaryItemPrice>₦ -5,900</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>$ 80</SummaryItemPrice>
+              <SummaryItemPrice>₦ 80,000</SummaryItemPrice>
             </SummaryItem>
             <Button>CHECKOUT NOW</Button>
 

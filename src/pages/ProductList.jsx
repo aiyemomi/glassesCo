@@ -7,7 +7,6 @@ import Newsletter from '../components/Newsletter'
 import Products from '../components/Products'
 
 const Container = styled.div`
-
 `;
 const Title = styled.h1`
 
@@ -26,6 +25,7 @@ const FilterText = styled.span`
   font-size: 20px;
   font-weight: 600;
   margin-right: 20px;
+  display: block;
 `;
 const Select = styled.select`
   padding: 10px;
@@ -39,7 +39,7 @@ const ProductList = () => {
     <Container>
     <Navbar/>
     <Announcemets/>
-    <Title>Dresses</Title>
+    {/* <Title>Frames</Title> */}
     <FilterContainer>
         <Filter>
         <FilterText>
@@ -74,7 +74,9 @@ const ProductList = () => {
           </Select>
         </Filter>
     </FilterContainer>
-    <Products/>
+    <Products style = {{marginBottom: "50px"}}/>
+    <br/>
+    <br/>
     <Newsletter/>
     <Footer/>
     </Container>

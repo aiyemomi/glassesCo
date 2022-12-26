@@ -23,30 +23,31 @@ opacity: 1;
 `
 
 const Container = styled.div`
-flex: 1;
+${'' /* flex: 1; */}
 margin: 5px;
 min-width: 280px;
-height: 350px;
-display:flex;
+height: 300px;
 align-items: center;
 justify-content: center;
-background-color: #f5fbfd;
 position: relative;
 
 `
-const Circle = styled.div`
-width: 200px;
-height: 200px;
-border-radius: 50%;
-background-color: white;
-position: absolute;
-`
-const Image = styled.img`
-max-width: 90%;
-height: 75%;
-z-index: 2;
-`
 
+const Image = styled.img`
+width: 100%;
+height: 100%;
+z-index: 2;
+object-fit: contain;
+transition: all 0.5s ease;
+${'' /* transform: scale(2); */}
+
+`
+const Title = styled.h1`
+font-size: 20px;
+`
+const Price = styled.h3`
+font-size: 16px;
+`
 const Icon = styled.div`
   width: 40px;
   height: 40px;
@@ -69,8 +70,14 @@ const Product = (props) => {
     console.log(props.item)
   return (
     <Container>
-<Circle/>
+
 <Image src = {props.item.img}/>
+<Title>
+{props.item.title}
+</Title>
+<Price>
+{props.item.price}
+</Price>
 <Info>
     <Icon><ShoppingCartOutlined /></Icon>
     <Icon><SearchOutlined/> </Icon>

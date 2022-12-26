@@ -39,12 +39,12 @@ margin: 20px 0;
 
 `
 const Button = styled.button`
-width: 40%;
+width: 35%;
 border: none;
 padding: 15px;
 color: white;
 cursor: pointer;
-background-color: teal;
+background-color: gray;
 `
 
 const Register = () => {

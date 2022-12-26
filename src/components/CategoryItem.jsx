@@ -27,10 +27,11 @@ justify-content: center;
 const Title = styled.h1`
 color: white;
 margin-bottom: 20px;
+font-size: 18px;
 `
 const Button = styled.button`
 border: none;
-padding: 10px;
+padding: 8px;
 background-color: white;
 color: gray;
 cursor: pointer;

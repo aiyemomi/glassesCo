@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
 display: flex;
+font-size: 13px;
 `
 const Left = styled.div`
 flex: 1;
@@ -12,7 +13,9 @@ flex-direction: column;
 padding: 20px;
 `
 const Logo = styled.h1`
-
+color: #1b2120;
+    letter-spacing: .1em;
+    font-size: 18px;
 `
 const Desc = styled.p`
   margin: 20px 0;
@@ -44,6 +47,7 @@ padding: 20px;
 `
 const Title = styled.h3`
   margin-bottom: 30px;
+  font-size: 18px;
 `
 const List = styled.ul`
  margin: 0;
@@ -69,7 +73,7 @@ const Footer = () => {
   return (
    <Container>
 <Left>
-<Logo>IllegalThings.</Logo>
+<Logo>About GlassesCo</Logo>
 <Desc>
 There are many variations of passages of Lorem Ipsum available, but
 the majority have suffered alteration in some form, by injected
@@ -91,16 +95,15 @@ humour, or randomised words which don’t look even slightly believable.
 </SocialContainer>
 </Left>
 <Center>
-<Title> Useful Links </Title>
+<Title> Shop </Title>
 <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
+          <ListItem>Men </ListItem>
+          <ListItem>Women</ListItem>
           <ListItem>Accessories</ListItem>
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
-          <ListItem>Wishlist</ListItem>
           <ListItem>Wishlist</ListItem>
           <ListItem>Terms</ListItem>
         </List>
@@ -109,11 +112,11 @@ humour, or randomised words which don’t look even slightly believable.
 <Title> Contact</Title>
 
 <ContactItem>
-<Room style={{marginRight:"10px"}}/> 622 Dixie Path , South Tobinchester 98336
+<Room style={{marginRight:"10px"}}/> Harmony Court Estate, Lagos
 </ContactItem>
 
 <ContactItem>
-<Phone style={{marginRight:"10px"}}/> +1 234 56 78
+<Phone style={{marginRight:"10px"}}/> +234 805 732 6729
     </ContactItem>
 
     <ContactItem>
